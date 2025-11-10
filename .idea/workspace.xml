@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c922964c-4a9f-4ba3-86fd-6fc2ac70ce5f" name="Changes" comment="Создал основной файл проекта">
-      <change afterPath="$PROJECT_DIR$/locallibrary/catalog/urls.py" afterDir="false" />
+    <list default="true" id="c922964c-4a9f-4ba3-86fd-6fc2ac70ce5f" name="Changes" comment="Создал приложение каталога и провел миграцию, также изменил немного settings.py и urls.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1762752090859</updated>
       <workItem from="1762752091926" duration="3597000" />
-      <workItem from="1762756391153" duration="398000" />
+      <workItem from="1762756391153" duration="3993000" />
     </task>
     <task id="LOCAL-00001" summary="Создал основной файл проекта">
       <option name="closed" value="true" />
@@ -80,7 +79,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762752499666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Создал приложение каталога и провел миграцию, также изменил немного settings.py и urls.py">
+      <option name="closed" value="true" />
+      <created>1762757066850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762757066850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создал основной файл проекта" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создал основной файл проекта" />
+    <MESSAGE value="Создал приложение каталога и провел миграцию, также изменил немного settings.py и urls.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал приложение каталога и провел миграцию, также изменил немного settings.py и urls.py" />
   </component>
 </project>
