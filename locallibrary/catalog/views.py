@@ -1,3 +1,4 @@
+from django.views import generic
 from django.shortcuts import render
 from .models import Book, Author, BookInstance, Genre
 
@@ -15,7 +16,6 @@ def index(request):
     for book in Book.objects.all():
         if(book.title.lower().find(set_word) != -1):
             count_books_include_word += 1
-            print(book.title)
 
     for genre in Genre.objects.all():
         if(genre.name.lower().find(set_word) != -1):
@@ -26,3 +26,18 @@ def index(request):
         'index.html',
         context={'num_books':num_books,'num_instances':num_instances,'num_instances_available':num_instances_available,'num_authors':num_authors, 'count_books_include_word':count_books_include_word, 'count_genres_include_word':count_genres_include_word},
     )
+
+class BookListView(generic.ListView):
+    model = Book
+    paginate_by = 5
+
+
+class BookDetailView(generic.DetailView):
+    model = Book
+
+class AuthorListView(generic.ListView):
+    model = Author
+    paginate_by = 5
+
+class AuthorDetailView(generic.DetailView):
+    model = Author
