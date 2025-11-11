@@ -1,5 +1,5 @@
 {% extends "base_generic.html" %}
-
+{% block title %}<title>Author-detail</title>{% endblock %}
 {% block content %}
   <h1>Author: {{ author }}</h1>
   <p>{%if author.date_of_birth%} {{ author.date_of_birth }} {%else%}xx-xx-xx{%endif%} - {%if author.date_of_death%}{{ author.date_of_death }}{%else%}xx-xx-xx{%endif%}</p>

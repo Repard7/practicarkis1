@@ -8,7 +8,7 @@ def index(request):
     num_instances=BookInstance.objects.all().count()
 
     num_instances_available=BookInstance.objects.filter(status__exact='a').count()
-    num_authors=Author.objects.count()
+    num_authors = Author.objects.count()
 
     set_word = 'про'
     count_books_include_word = 0
@@ -21,11 +21,15 @@ def index(request):
         if(genre.name.lower().find(set_word) != -1):
             count_genres_include_word += 1
 
+    num_visits = request.session.get('num_visits', 0)
+    request.session['num_visits'] = num_visits + 1
+
     return render(
         request,
         'index.html',
-        context={'num_books':num_books,'num_instances':num_instances,'num_instances_available':num_instances_available,'num_authors':num_authors, 'count_books_include_word':count_books_include_word, 'count_genres_include_word':count_genres_include_word},
-    )
+        context={'num_books': num_books, 'num_instances': num_instances,
+                 'num_instances_available': num_instances_available, 'num_authors': num_authors,
+                 'num_visits': num_visits},)
 
 class BookListView(generic.ListView):
     model = Book
