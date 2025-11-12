@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c922964c-4a9f-4ba3-86fd-6fc2ac70ce5f" name="Changes" comment="Сделал все базовые тесты для контроллеров">
+    <list default="true" id="c922964c-4a9f-4ba3-86fd-6fc2ac70ce5f" name="Changes" comment="Подправил ошибки и удалил все комментарии ненужные">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/locallibrary/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/locallibrary/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/db.sqlite3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,7 @@
       <workItem from="1762756391153" duration="6170000" />
       <workItem from="1762840562497" duration="20378000" />
       <workItem from="1762918515456" duration="6887000" />
-      <workItem from="1762925661024" duration="8943000" />
+      <workItem from="1762925661024" duration="10237000" />
     </task>
     <task id="LOCAL-00001" summary="Создал основной файл проекта">
       <option name="closed" value="true" />
@@ -201,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762935204336</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Подправил ошибки и удалил все комментарии ненужные">
+      <option name="closed" value="true" />
+      <created>1762936761941</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1762936761941</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +248,7 @@
     <MESSAGE value="Сделал все базовые тесты" />
     <MESSAGE value="Сделал все базовые тесты для форм" />
     <MESSAGE value="Сделал все базовые тесты для контроллеров" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал все базовые тесты для контроллеров" />
+    <MESSAGE value="Подправил ошибки и удалил все комментарии ненужные" />
+    <option name="LAST_COMMIT_MESSAGE" value="Подправил ошибки и удалил все комментарии ненужные" />
   </component>
 </project>

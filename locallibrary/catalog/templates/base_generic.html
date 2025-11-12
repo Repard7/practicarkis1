@@ -40,8 +40,10 @@
               <li><a href="{% url 'index' %}">Home</a></li>
               <li><a href="{% url 'books' %}">All books</a></li>
               <li><a href="{% url 'authors' %}">All authors</a></li>
-              <li><a href="{% url 'author_create' %}">Добавить автора</a></li>
-              <li><a href="{% url 'book_create' %}">Добавить книгу</a></li>
+              {% if perms.catalog.can_mark_returned %}
+                <li><a href="{% url 'author_create' %}">Добавить автора</a></li>
+                <li><a href="{% url 'book_create' %}">Добавить книгу</a></li>
+              {%endif%}
 
             </ul>
           {% endblock %}
