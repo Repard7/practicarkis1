@@ -8,6 +8,7 @@ from django.shortcuts import get_object_or_404
 from django.http import HttpResponseRedirect
 from django.urls import reverse, reverse_lazy
 import datetime
+from django.contrib.auth.mixins import PermissionRequiredMixin
 from .forms import RenewBookForm
 
 def index(request):
@@ -53,26 +54,19 @@ class AuthorListView(generic.ListView):
 class AuthorDetailView(generic.DetailView):
     model = Author
 
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
-
-
 @login_required
 def loaned_books_by_user_list(request):
-    # Проверяем есть ли права can_mark_returned
     if request.user.has_perm('catalog.can_mark_returned'):
-        # Если есть права - показываем ВСЕ взятые книги
         book_list = BookInstance.objects.filter(
             status__exact='o'
         ).order_by('due_back')
     else:
-        # Если нет прав - показываем только книги текущего пользователя
         book_list = BookInstance.objects.filter(
             borrower=request.user
         ).filter(
             status__exact='o'
         ).order_by('due_back')
 
-    # Настраиваем пагинацию
     paginator = Paginator(book_list, 10)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
@@ -89,27 +83,22 @@ class AuthorCreate(PermissionRequiredMixin, CreateView):
     initial={'date_of_death':'12/10/2016',}
     permission_required = 'catalog.can_mark_returned'
 
-
 class AuthorUpdate(UpdateView):
     model = Author
     fields = ['first_name','last_name','date_of_birth','date_of_death']
 
-
 class AuthorDelete(DeleteView):
     model = Author
     success_url = reverse_lazy('authors')
-
 
 class BookCreate(PermissionRequiredMixin, CreateView):
     model = Book
     fields = '__all__'
     permission_required = 'catalog.can_mark_returned'
 
-
 class BookUpdate(UpdateView):
     model = Book
     fields = ['title','summary','language']
-
 
 class BookDelete(DeleteView):
     model = Book
@@ -120,22 +109,16 @@ def renew_book_librarian(request, pk):
 
     book_inst=get_object_or_404(BookInstance, pk = pk)
 
-    # Если это POST-запрос, тогда обработать данные формы
     if request.method == 'POST':
 
-        # Создать объект формы и заполнить её данными из запроса (связывание/биндинг):
         form = RenewBookForm(request.POST)
 
-        # Проверка валидности формы:
         if form.is_valid():
-            # process the data in form.cleaned_data as required (here we just write it to the model due_back field)
             book_inst.due_back = form.cleaned_data['renewal_date']
             book_inst.save()
 
-            # переход по URL-адресу:
             return HttpResponseRedirect(reverse('my-borrowed') )
 
-    # Если это GET-запрос (или что-то ещё), то создаём форму по умолчанию
     else:
         proposed_renewal_date = datetime.date.today() + datetime.timedelta(weeks=3)
         form = RenewBookForm(initial={'renewal_date': proposed_renewal_date,})
