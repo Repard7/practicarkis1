@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c922964c-4a9f-4ba3-86fd-6fc2ac70ce5f" name="Changes" comment="Подправил ошибки и удалил все комментарии ненужные">
+    <list default="true" id="c922964c-4a9f-4ba3-86fd-6fc2ac70ce5f" name="Changes" comment="Все статичные файлы подтянул">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locallibrary/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/РабочийСтол/Все+Obsidian+git/Content/LearningTTIT/Практика_Django/LocalLibrary&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/РабочийСтол/Все+Obsidian+git/Content/LearningTTIT/Практика_Django/ProDesign",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +81,16 @@
       <workItem from="1762756391153" duration="6170000" />
       <workItem from="1762840562497" duration="20378000" />
       <workItem from="1762918515456" duration="6887000" />
-      <workItem from="1762925661024" duration="10237000" />
+      <workItem from="1762925661024" duration="13066000" />
+      <workItem from="1762942104218" duration="192000" />
+      <workItem from="1762942975905" duration="146000" />
+      <workItem from="1762943384903" duration="379000" />
+      <workItem from="1762943781626" duration="12000" />
+      <workItem from="1762948355926" duration="16000" />
+      <workItem from="1762948401805" duration="678000" />
+      <workItem from="1762963411222" duration="17000" />
+      <workItem from="1762968629125" duration="1739000" />
+      <workItem from="1763002072169" duration="6916000" />
     </task>
     <task id="LOCAL-00001" summary="Создал основной файл проекта">
       <option name="closed" value="true" />
@@ -204,7 +212,23 @@
       <option name="project" value="LOCAL" />
       <updated>1762936761941</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Все сделал">
+      <option name="closed" value="true" />
+      <created>1762938437248</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1762938437248</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Все статичные файлы подтянул">
+      <option name="closed" value="true" />
+      <created>1762938467655</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1762938467655</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +273,8 @@
     <MESSAGE value="Сделал все базовые тесты для форм" />
     <MESSAGE value="Сделал все базовые тесты для контроллеров" />
     <MESSAGE value="Подправил ошибки и удалил все комментарии ненужные" />
-    <option name="LAST_COMMIT_MESSAGE" value="Подправил ошибки и удалил все комментарии ненужные" />
+    <MESSAGE value="Все сделал" />
+    <MESSAGE value="Все статичные файлы подтянул" />
+    <option name="LAST_COMMIT_MESSAGE" value="Все статичные файлы подтянул" />
   </component>
 </project>

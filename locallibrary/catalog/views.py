@@ -124,4 +124,3 @@ def renew_book_librarian(request, pk):
         form = RenewBookForm(initial={'renewal_date': proposed_renewal_date,})
 
     return render(request, 'catalog/book_renew_librarian.html', {'form': form, 'bookinst':book_inst})
-    return render(request, 'catalog/book_renew_librarian.html', {'form': form, 'bookinst':book_inst})
